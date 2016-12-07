@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Rindra">
+        <title>{% block title %}Rindra Application{% endblock %}</title>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        {% block stylesheet %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/style.default.css') }}">
+        {% endblock %}
+
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('theme/js/jquery-1.11.1.min.js') }}"></script>
+            <script src="{{ asset('theme/js/jquery-migrate-1.2.1.min.js') }}"></script>
+            <script src="{{ asset('theme/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('theme/js/modernizr.min.js') }}"></script>
+            <script src="{{ asset('theme/js/pace.min.js') }}"></script>
+            <script src="{{ asset('theme/js/retina.min.js') }}"></script>
+            <script src="{{ asset('theme/js/jquery.cookies.js') }}"></script>
+            <script src="{{ asset('theme/js/custom.js') }}"></script>
+        {% endblock %}
     </body>
 </html>

@@ -14,10 +14,55 @@
         {% endblock %}
 
     </head>
+        <body>
+            {% block entete %}
+                <header>
+                    <div class="headerwrapper">
+                        <div class="header-left">
+                            <a href="index-2.html" class="logo">
+                                <img src="{{ asset('theme/images/logo.png') }}" alt="logo" />
+                            </a>
+                            <div class="pull-right">
+                                <a href="#" class="menu-collapse">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                        </div><!-- header-left -->
 
-        {% block body %}
+                        <!-- pull-right -->
+                        {{ include(':entete:entete_droite.html.twig') }}
+                        <!-- header-right -->
 
-        {% endblock %}
+                    </div><!-- headerwrapper -->
+                </header>
+            {% endblock %}
+            <section>
+                <div class="mainwrapper">
+                    {% block contenu %}
+                        <div class="leftpanel">
+                        {% block leftpanel %}
+                            <!-- profile du gauche -->
+                            {% include(':sous_entete:profile_gauche.html.twig') %}
+                            <!-- END profile du gauche -->
+
+                            <!-- menu -->
+                            {% include('::menu.html.twig') %}
+                            <!-- END menu -->
+                        {% endblock %}
+                        </div>
+
+                        <div class="mainpanel">
+                            {% block mainpanel %}
+                                <!-- page header -->
+                                {% include(':sous_entete:page_header.html.twig') %}
+                                <!-- END page header -->
+                            {% endblock %}
+                        </div>
+                    {% endblock %}
+                </div>
+            </section>
+
+        </body>
 
         {% block javascripts %}
             <script src="{{ asset('theme/js/jquery-1.11.1.min.js') }}"></script>

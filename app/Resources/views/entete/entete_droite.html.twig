@@ -1,0 +1,20 @@
+<div class="header-right">
+    <div class="pull-right">
+        <!-- barre de recherche -->
+        {{ include(":entete:search.html.twig") }}
+        <!-- END barre de recherche -->
+
+        <!-- liste des notifications -->
+        {% include("entete/liste_notification.html.twig") %}
+        <!-- END liste des notifications -->
+
+        <!-- liste des messages -->
+        {% include("entete/liste_message.html.twig") %}
+        <!-- END liste des messages -->
+
+        <!-- menu de droite -->
+        {% include("entete/menu_droite.html.twig") %}
+        <!-- END menu de droite -->
+
+    </div>
+</div>

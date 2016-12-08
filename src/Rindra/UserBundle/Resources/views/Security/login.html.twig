@@ -1,7 +1,6 @@
 {% extends '::base_security.html.twig' %}
 
 {% block body %}
-    <body class="signin">
         <section>
             <div class="panel panel-signin">
                 <div class="panel-body">
@@ -40,10 +39,9 @@
 
                 </div><!-- panel-body -->
                 <div class="panel-footer">
-                    <a href="signup-2.html" class="btn btn-primary btn-block">Not yet a Member? Create Account Now</a>
+                    <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary btn-block">Not yet a Member? Create Account Now</a>
                 </div><!-- panel-footer -->
             </div><!-- panel -->
 
         </section>
-    </body>
 {% endblock %}

@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+    {# On declare seulement les block u'on veut modifier#}
+    {% block mainpanel %}
+        {# Appel du page header du parent #}
+        {{ parent() }}
+
+        {% block fos_user_content %}
+            {% include "FOSUserBundle:Profile:edit_content.html.twig" %}
+        {% endblock fos_user_content %}
+    {% endblock %}

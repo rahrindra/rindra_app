@@ -22,16 +22,21 @@
                             <a href="index-2.html" class="logo">
                                 <img src="{{ asset('theme/images/logo.png') }}" alt="logo" />
                             </a>
+
+                            {% if app.user %}
                             <div class="pull-right">
                                 <a href="#" class="menu-collapse">
                                     <i class="fa fa-bars"></i>
                                 </a>
                             </div>
+                            {% endif %}
                         </div><!-- header-left -->
 
-                        <!-- pull-right -->
-                        {{ include(':entete:entete_droite.html.twig') }}
-                        <!-- header-right -->
+                        {% if app.user %}
+                            <!-- pull-right -->
+                            {{ include(':entete:entete_droite.html.twig') }}
+                            <!-- header-right -->
+                        {% endif %}
 
                     </div><!-- headerwrapper -->
                 </header>
@@ -39,17 +44,21 @@
             <section>
                 <div class="mainwrapper">
                     {% block contenu %}
-                        <div class="leftpanel">
-                        {% block leftpanel %}
-                            <!-- profile du gauche -->
-                            {% include(':sous_entete:profile_gauche.html.twig') %}
-                            <!-- END profile du gauche -->
+                        {% if app.user %}
+                            <div class="leftpanel">
+                                {% block leftpanel %}
 
-                            <!-- menu -->
-                            {% include('::menu.html.twig') %}
-                            <!-- END menu -->
-                        {% endblock %}
-                        </div>
+                                        <!-- profile du gauche -->
+                                        {% include(':sous_entete:profile_gauche.html.twig') %}
+                                        <!-- END profile du gauche -->
+
+                                        <!-- menu -->
+                                        {% include('::menu.html.twig') %}
+                                        <!-- END menu -->
+
+                                {% endblock %}
+                            </div>
+                        {% endif %}
 
                         <div class="mainpanel">
                             {% block mainpanel %}

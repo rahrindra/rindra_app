@@ -1,0 +1,9 @@
+{% extends "::base.html.twig" %}
+
+{% block contenu %}
+    <div class="well col-lg-8 col-lg-offset-2">
+        <p>
+            {{ 'resetting.check_email'|trans({'%email%': email}, 'FOSUserBundle') }}
+        </p>
+    </div>
+{% endblock %}

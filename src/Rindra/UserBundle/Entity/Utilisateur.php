@@ -3,6 +3,7 @@
 namespace Rindra\UserBundle\Entity;
 
 use FOS\UserBundle\Entity\User as BaseUser;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -22,8 +23,94 @@ class Utilisateur extends BaseUser
      */
     protected $id;
 
+
+    /**
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @ORM\Column(name="prenoms", type="string", length=255)
+     */
+    private $prenoms;
+
+    /**
+     * @ORM\OneToOne(targetEntity="Rindra\UserBundle\Entity\Image", cascade={"persist", "remove"})
+     * @Assert\Valid()
+     */
+    private $image;
+
     public function __construct()
     {
         parent::__construct();
+    }
+
+    /**
+     * Set image
+     *
+     * @param \Rindra\UserBundle\Entity\Image $image
+     * @return Utilisateur
+     */
+    public function setImage(\Rindra\UserBundle\Entity\Image $image = null)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \Rindra\UserBundle\Entity\Image
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     * @return Utilisateur
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string 
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set prenoms
+     *
+     * @param string $prenoms
+     * @return Utilisateur
+     */
+    public function setPrenoms($prenoms)
+    {
+        $this->prenoms = $prenoms;
+
+        return $this;
+    }
+
+    /**
+     * Get prenoms
+     *
+     * @return string 
+     */
+    public function getPrenoms()
+    {
+        return $this->prenoms;
     }
 }

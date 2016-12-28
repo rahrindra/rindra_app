@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+    {# On ne touche rien au block "leftpanel" donc pas besoin de le redifinissez ici#}
+
+    {% block mainpanel %}
+        {# Appel du page header du parent #}
+        {{ parent() }}
+
+        <div class="contentpanel">
+            <div class="row">
+                <form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
+                    {{ form_widget(form) }}
+                    <div>
+                        <input type="submit" value="{{ 'profile.edit.submit'|trans({}, 'FOSUserBundle') }}" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    {% endblock %}

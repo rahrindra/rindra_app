@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+    {# On ne touche rien au block "leftpanel" donc pas besoin de le redifinissez ici#}
+
+    {% block mainpanel %}
+        {# Appel du page header du parent #}
+        {{ parent() }}
+
+        <div class="contentpanel">
+            <div class="row">
+                {{ include("RindraUserBundle:Profile:form.html.twig") }}
+            </div>
+        </div>
+
+
+    {% endblock %}

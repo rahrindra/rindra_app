@@ -1,0 +1,79 @@
+<form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
+    <p class="text-danger">{{ form_errors(form.username) }}</p>
+    <div class="form-group">
+        {{ form_label(form.username, null, {
+            'label': 'Nom d\'utilisateur :',
+            'label_attr': {'class': 'col-md-2 control-label'}
+        }) }}
+        <div class="col-md-4">
+            {{ form_widget(
+            form.username,
+            {'attr' : {'class': 'form-control'}}
+            )}}
+        </div>
+        <span class="text-danger">{{ form_errors(form.username) }}</span>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.email, null, {
+            'label': 'Adresse e-mail :',
+            'label_attr': {'class': 'col-md-2 control-label'}
+        }) }}
+        <div class="col-md-4">
+            {{ form_widget(
+            form.email,
+            {'attr' : {'class': 'form-control'}}
+            )}}
+        </div>
+        <span class="text-danger">{{ form_errors(form.email) }}</span>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.nom, null, {
+            'label': 'Nom :',
+            'label_attr': {'class': 'col-md-2 control-label'}
+        }) }}
+        <div class="col-md-4">
+            {{ form_widget(
+            form.nom,
+            {'attr' : {'class': 'form-control'}}
+            )}}
+        </div>
+        <span class="text-danger">{{ form_errors(form.nom) }}</span>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.prenoms, null, {
+            'label': 'Prénoms :',
+            'label_attr': {'class': 'col-md-2 control-label'}
+        }) }}
+        <div class="col-md-4">
+            {{ form_widget(
+            form.prenoms,
+            {'attr' : {'class': 'form-control'}}
+            )}}
+        </div>
+        <span class="text-danger">{{ form_errors(form.prenoms) }}</span>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.image.file, null, {
+            'label': 'Images :',
+            'label_attr': {'class': 'col-md-2 control-label'}
+        }) }}
+        <div class="col-md-4">
+            {{ form_widget(
+            form.image.file,
+            {'attr' : {'class': 'form-control'}}
+            )}}
+        </div>
+        <span class="text-danger">{{ form_errors(form.image.file) }}</span>
+    </div>
+
+    {{ form_rest(form) }}
+
+    <div class="col-md-6">
+        <input type="submit" class="btn btn-success" value="{{ 'profile.edit.submit'|trans({}, 'FOSUserBundle') }}" />
+    </div>
+
+</form>

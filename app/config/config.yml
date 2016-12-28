@@ -91,3 +91,7 @@ fos_user:
                 sender_name: Rindra
     service:
         mailer: fos_user.mailer.twig_swift
+
+    profile:
+        form:
+            type: rindra_user_profile_form

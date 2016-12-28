@@ -18,6 +18,7 @@ class UtilisateurType extends AbstractType
             ->add('nom', 'text')
             ->add('prenoms', 'text')
             ->add('image', new ImageType())
+            ->remove('current_password')
         ;
     }
 

@@ -62,13 +62,28 @@
             'label_attr': {'class': 'col-md-2 control-label'}
         }) }}
         <div class="col-md-4">
-            {{ form_widget(
-            form.image.file,
-            {'attr' : {'class': 'form-control'}}
-            )}}
+            {{ form_widget(form.image.file)}}
         </div>
         <span class="text-danger">{{ form_errors(form.image.file) }}</span>
     </div>
+
+    {# debut adresse #}
+    <div class="form-group">
+        {{ form_label(form.utilisateurAdresses, null, {
+            'label': 'Adresses :',
+            'label_attr': {'class': 'col-md-2 control-label'}
+        }) }}
+        <div class="col-md-4">
+            <div id="collectionContainer"
+                 data-prototype="
+                    {% filter escape %}
+                        {{ include('RindraUserBundle:Profile:form_adresse_prototype.html.twig', { 'form_adresse': form.utilisateurAdresses.vars.prototype }) }}
+                    {% endfilter %}">
+            </div>
+        </div>
+        <span class="text-danger">{{ form_errors(form.utilisateurAdresses) }}</span>
+    </div>
+    {# fin adresse #}
 
     {{ form_rest(form) }}
 

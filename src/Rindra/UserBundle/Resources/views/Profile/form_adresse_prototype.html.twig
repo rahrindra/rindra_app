@@ -1,0 +1,75 @@
+<div class="well">
+    {{ form_start(form_adresse) }}
+        <div class="form-group ">
+            {{ form_label(form_adresse.type, null, {
+                'label': 'type :',
+                'label_attr': {'class': 'col-md-3 control-label'}
+            }) }}
+            <div class="col-md-9">
+                {{ form_widget(
+                form_adresse.type,
+                {'attr': {'class': 'form-control'}}
+                )}}
+            </div>
+            <span class="text-danger">{{ form_errors(form_adresse.type) }}</span>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form_adresse.adresse.voie, null, {
+                'label': 'Voie :',
+                'label_attr': {'class': 'col-md-3 control-label'}
+            }) }}
+            <div class="col-md-9">
+                {{ form_widget(
+                form_adresse.adresse.voie,
+                {'attr': {'class': 'form-control'}}
+                )}}
+            </div>
+            <span class="text-danger">{{ form_errors(form_adresse.adresse.voie) }}</span>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form_adresse.adresse.lieu, null, {
+                'label': 'Lieu :',
+                'label_attr': {'class': 'col-md-3 control-label'}
+            }) }}
+            <div class="col-md-9">
+                {{ form_widget(
+                form_adresse.adresse.lieu,
+                {'attr': {'class': 'form-control'}}
+                )}}
+            </div>
+            <span class="text-danger">{{ form_errors(form_adresse.adresse.lieu) }}</span>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form_adresse.adresse.codePostale, null, {
+                'label': 'Code Postale :',
+                'label_attr': {'class': 'col-md-3 control-label'}
+            }) }}
+            <div class="col-md-9">
+                {{ form_widget(
+                form_adresse.adresse.codePostale,
+                {'attr': {'class': 'form-control'}}
+                )}}
+            </div>
+            <span class="text-danger">{{ form_errors(form_adresse.adresse.codePostale) }}</span>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form_adresse.adresse.pays, null, {
+                'label': 'Pays :',
+                'label_attr': {'class': 'col-md-3 control-label'}
+            }) }}
+            <div class="col-md-9">
+                {{ form_widget(
+                form_adresse.adresse.pays,
+                {'attr': {'class': 'form-control'}}
+                )}}
+            </div>
+            <span class="text-danger">{{ form_errors(form_adresse.adresse.pays) }}</span>
+        </div>
+
+        {{ form_rest(form_adresse) }}
+    {{ form_end(form) }}
+</div>

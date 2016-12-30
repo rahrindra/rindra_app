@@ -18,6 +18,11 @@ class UtilisateurType extends AbstractType
             ->add('nom', 'text')
             ->add('prenoms', 'text')
             ->add('image', new ImageType())
+            ->add('utilisateurAdresses', 'collection', array(
+                'type' => new UtilisateurAdresseType(),
+                'allow_add' => true,
+                'allow_delete' => true
+            ))
             ->remove('current_password')
         ;
     }

@@ -10,6 +10,9 @@
                 {{ include("RindraUserBundle:Profile:form.html.twig") }}
             </div>
         </div>
+    {% endblock %}
 
-
+    {% block javascripts %}
+        {{ parent() }}
+        <script src="{{ asset('bundles/rindrauser/js/profile.form.js') }}"></script>
     {% endblock %}

@@ -40,6 +40,13 @@ class Utilisateur extends BaseUser
      */
     private $image;
 
+    /**
+     * @var object
+     *
+     * @ORM\OneToMany(targetEntity="Rindra\UserBundle\Entity\UtilisateurAdresse", mappedBy="utilisateur")
+     */
+    private $utilisateurAdresses;
+
     public function __construct()
     {
         parent::__construct();
@@ -66,5 +73,51 @@ class Utilisateur extends BaseUser
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     * @return Utilisateur
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string 
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set prenoms
+     *
+     * @param string $prenoms
+     * @return Utilisateur
+     */
+    public function setPrenoms($prenoms)
+    {
+        $this->prenoms = $prenoms;
+
+        return $this;
+    }
+
+    /**
+     * Get prenoms
+     *
+     * @return string 
+     */
+    public function getPrenoms()
+    {
+        return $this->prenoms;
     }
 }

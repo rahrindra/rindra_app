@@ -49,6 +49,13 @@ class Adresse
      */
     private $pays;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Rindra\UserBundle\Entity\UtilisateurAdresse", mappedBy="adresse", cascade={"persist"})
+     */
+    private $utilisateurAdresses;
+
 
     /**
      * Get id
@@ -150,5 +157,49 @@ class Adresse
     public function getPays()
     {
         return $this->pays;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->utilisateurAdresses = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add utilisateurAdresses
+     *
+     * @param \Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses
+     * @return Adresse
+     */
+    public function addUtilisateurAdress(\Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses)
+    {
+        $this->utilisateurAdresses[] = $utilisateurAdresses;
+
+        $utilisateurAdresses->setAdresse($this);
+
+        return $this;
+    }
+
+    /**
+     * Remove utilisateurAdresses
+     *
+     * @param \Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses
+     */
+    public function removeUtilisateurAdress(\Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses)
+    {
+        $this->utilisateurAdresses->removeElement($utilisateurAdresses);
+
+        return $this;
+    }
+
+    /**
+     * Get utilisateurAdresses
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getUtilisateurAdresses()
+    {
+        return $this->utilisateurAdresses;
     }
 }

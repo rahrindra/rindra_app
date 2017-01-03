@@ -1,3 +1,6 @@
+
+{% form_theme form '@RindraUser/Profile/widget_prototype.html.twig' %}
+
 <form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
     <p class="text-danger">{{ form_errors(form.username) }}</p>
     <div class="form-group">
@@ -67,19 +70,16 @@
         <span class="text-danger">{{ form_errors(form.image.file) }}</span>
     </div>
 
-    {# debut adresse #}
+    {# debut adresse : on utilise ici le theme surchargé des collection precisé en début #}
     <div class="form-group">
         {{ form_label(form.utilisateurAdresses, null, {
             'label': 'Adresses :',
             'label_attr': {'class': 'col-md-2 control-label'}
         }) }}
-        <div class="col-md-4">
-            <div id="collectionContainer"
-                 data-prototype="
-                    {% filter escape %}
-                        {{ include('RindraUserBundle:Profile:form_adresse_prototype.html.twig', { 'form_adresse': form.utilisateurAdresses.vars.prototype }) }}
-                    {% endfilter %}">
-            </div>
+        <div class="col-md-4 well">
+            <a href="#" id="ajouter_adresse" class="btn btn-info center-block btn-sm">Ajouter une adresse</a>
+            {{ form_widget(form.utilisateurAdresses) }}
+
         </div>
         <span class="text-danger">{{ form_errors(form.utilisateurAdresses) }}</span>
     </div>

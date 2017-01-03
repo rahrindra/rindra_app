@@ -21,7 +21,8 @@ class UtilisateurType extends AbstractType
             ->add('utilisateurAdresses', 'collection', array(
                 'type' => new UtilisateurAdresseType(),
                 'allow_add' => true,
-                'allow_delete' => true
+                'allow_delete' => true,
+                'by_reference' => false, // pour utiliser les getters et setters
             ))
             ->remove('current_password')
         ;

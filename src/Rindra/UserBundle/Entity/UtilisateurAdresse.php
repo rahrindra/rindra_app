@@ -31,7 +31,7 @@ class UtilisateurAdresse
     /**
      * @var object
      *
-     * @ORM\ManyToOne(targetEntity="Rindra\UserBundle\Entity\Adresse")
+     * @ORM\ManyToOne(targetEntity="Rindra\UserBundle\Entity\Adresse", inversedBy="utlisateurAdresses", cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $adresse;

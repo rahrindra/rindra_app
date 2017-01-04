@@ -13,14 +13,14 @@
                         <img
                              class="img-circle img-offline img-responsive img-profile"
                              alt="photo de profil"
-                            {% if app.user.im is defined %}
+                            {% if app.user.image is defined %}
                                 src="{{ asset(app.user.image.uploadDir ~ '/' ~ app.user.image.id ~ '.' ~ app.user.image.url) }}" alt="profile"
                             {% else %}
                                 src="{{ asset('theme/images/man-profile.png') }}" alt="profile"
                             {% endif %}
                         />
                         <h4 class="profile-name mb5">{{ user.prenoms }} {{ user.nom }}</h4>
-                        <div><i class="fa fa-map-marker"></i> San Francisco, California, USA</div>
+                        <div><i class="fa fa-map-marker"></i> {{ user.utilisateurAdresses|first.adresse.voie }}, {{ user.utilisateurAdresses|first.adresse.lieu }}, {{ user.utilisateurAdresses|first.adresse.pays }}</div>
                         <div><i class="fa fa-briefcase"></i> Software Engineer at <a href="#">Company, Inc.</a></div>
 
                         <div class="mb20"></div>

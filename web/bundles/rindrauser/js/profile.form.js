@@ -9,12 +9,14 @@ $(function () {
         e.preventDefault();
     });
 
+    var index = 1;
     function ajouterAdresse(container) {
         var prototype = $(container.attr('data-prototype')
-            .replace(/__name__label__/g, '1')
-            .replace(/__name__/g, '1'));
+            .replace(/__name__label__/g, ''+index)
+            .replace(/__name__/g, '1'+index));
 
         container.append(prototype);
+        index++;
     }
 
     container.on('click', 'a.supprimer_adresse', function (e) {

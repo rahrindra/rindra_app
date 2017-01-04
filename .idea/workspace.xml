@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b14d0108-9f25-40cf-93f6-6efb6fba6e28" name="Default" comment="base des templates + integration du fos et du login du template OK">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/widget_prototype.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/form_adresse_prototype.html.twig" afterPath="" />
+    <list default="true" id="b14d0108-9f25-40cf-93f6-6efb6fba6e28" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Adresse.php" afterPath="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Adresse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/UtilisateurAdresse.php" afterPath="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/UtilisateurAdresse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rindra/UserBundle/Form/UtilisateurType.php" afterPath="$PROJECT_DIR$/src/Rindra/UserBundle/Form/UtilisateurType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/form.html.twig" afterPath="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/form.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig" afterPath="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/rindrauser/js/profile.form.js" afterPath="$PROJECT_DIR$/web/bundles/rindrauser/js/profile.form.js" />
     </list>
@@ -36,8 +29,8 @@
       <file leaf-file-name="UtilisateurAdresse.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/UtilisateurAdresse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="33" column="122" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="122" />
+            <state relative-caret-position="68">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -46,28 +39,28 @@
       <file leaf-file-name="Adresse.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Adresse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="3264">
               <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.form.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.form.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/bundles/rindrauser/js/profile.form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="119">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile_gauche.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile_gauche.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="23" selection-start-line="3" selection-start-column="12" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,12 +69,19 @@
       <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="false" />
-                <marker date="1483446347842" expanded="true" signature="125:43254" ph="{% block mainpanel ...%}" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Form/UtilisateurType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,17 +90,7 @@
         <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Utilisateur.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="183">
-              <caret line="147" column="5" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+              <caret line="48" column="32" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -109,9 +99,11 @@
       <file leaf-file-name="bootstrap_3_layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/bootstrap_3_layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
+            <state relative-caret-position="391">
               <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding />
+              <folding>
+                <element signature="e#8#33#0#Twig" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,9 +121,10 @@
       <file leaf-file-name="form.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
+            <state relative-caret-position="17">
               <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding>
+                <element signature="e#21#67#0#Twig" expanded="false" />
                 <element signature="e#96#117#0#Twig" expanded="false" />
               </folding>
             </state>
@@ -171,6 +164,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -218,12 +214,12 @@
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/widget_prototype.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/rindrauser/js/profile.form.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig" />
-        <option value="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Utilisateur.php" />
         <option value="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Adresse.php" />
         <option value="$PROJECT_DIR$/src/Rindra/UserBundle/Entity/UtilisateurAdresse.php" />
+        <option value="$PROJECT_DIR$/web/bundles/rindrauser/js/profile.form.js" />
+        <option value="$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig" />
       </list>
     </option>
   </component>
@@ -284,8 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,72 +309,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindra_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindra_app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindra_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindra_app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindrauser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindra_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindra_app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rindrauser" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,6 +371,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rindra_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rindra_app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rindra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Profile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rindra_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rindra_app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rindra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rindra_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rindra_app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rindra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,6 +554,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -629,7 +649,8 @@
       <workItem from="1483081873788" duration="3792000" />
       <workItem from="1483096210871" duration="5573000" />
       <workItem from="1483339506097" duration="20710000" />
-      <workItem from="1483426229824" duration="14545000" />
+      <workItem from="1483426229824" duration="14749000" />
+      <workItem from="1483511275037" duration="3014000" />
     </task>
     <task id="LOCAL-00001" summary="premier connexion réussi avec fosuser">
       <created>1481113826141</created>
@@ -652,30 +673,37 @@
       <option name="project" value="LOCAL" />
       <updated>1481184901055</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ajout ok et personnalisation du theme">
+      <created>1483452937942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1483452937942</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138164000" />
+    <option name="totallyTimeSpent" value="141382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27760968" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28214827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -719,7 +747,8 @@
     <MESSAGE value="premier connexion réussi avec fosuser" />
     <MESSAGE value="page login du thème intégré avec fosuser" />
     <MESSAGE value="base des templates + integration du fos et du login du template OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="base des templates + integration du fos et du login du template OK" />
+    <MESSAGE value="ajout ok et personnalisation du theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout ok et personnalisation du theme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -937,9 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="e#42#82#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,9 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#42#82#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,7 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="26" column="17" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,17 +1033,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Form/UtilisateurType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="646">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding />
         </state>
@@ -1031,9 +1043,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/form.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
+        <state relative-caret-position="17">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
           <folding>
+            <element signature="e#21#67#0#Twig" expanded="false" />
             <element signature="e#96#117#0#Twig" expanded="false" />
           </folding>
         </state>
@@ -1041,9 +1054,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/bootstrap_3_layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
+        <state relative-caret-position="391">
           <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#8#33#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,53 +1070,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="3" selection-start-column="12" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-            <marker date="1483446347842" expanded="true" signature="125:43254" ph="{% block mainpanel ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="147" column="5" selection-start-line="147" selection-start-column="5" selection-end-line="147" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Adresse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="3264">
           <caret line="192" column="21" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Form/UtilisateurType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/UtilisateurAdresse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="33" column="122" selection-start-line="33" selection-start-column="122" selection-end-line="33" selection-end-column="122" />
+        <state relative-caret-position="68">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Entity/Utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/rindrauser/js/profile.form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rindra/UserBundle/Resources/views/Profile/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/sous_entete/profile_gauche.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

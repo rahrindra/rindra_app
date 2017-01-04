@@ -1,0 +1,32 @@
+{% block rindra_userbundle_utilisateuradresse_widget %}
+    {% spaceless %}
+        {% if prototype is defined %}
+            {% set attr = attr|merge({'data-prototype': block('rindra_userbundle_utilisateuradresse_item_widget') }) %}
+        {% endif %}
+        <div {{ block('widget_container_attributes') }}>
+            {{ form_errors(form) }}
+            {{ form_row(form.type) }}
+            {{ form_row(form.adresse.voie) }}
+            {{ form_row(form.adresse.codePostale) }}
+            {{ form_row(form.adresse.lieu) }}
+            {{ form_row(form.adresse.pays) }}
+            <a href="#" class="btn btn-sm btn-danger center-block supprimer_adresse">supprimer</a>
+            <hr>
+            {{ form_rest(form) }}
+        </div>
+    {% endspaceless %}
+{% endblock %}
+
+{#formulaire pour l'ajout#}
+{% block rindra_userbundle_utilisateuradresse_item_widget %}
+    {% spaceless %}
+        <br>
+        {{ form_errors(form) }}
+        {{ form_row(form.type) }}
+        {{ form_row(form.adresse.voie) }}
+        {{ form_row(form.adresse.codePostale) }}
+        {{ form_row(form.adresse.lieu) }}
+        {{ form_row(form.adresse.pays) }}
+    {% endspaceless %}
+{% endblock rindra_userbundle_utilisateuradresse_item_widget %}
+{# END formulaire pour l'ajout#}

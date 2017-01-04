@@ -2,6 +2,7 @@
 
 namespace Rindra\UserBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Entity\User as BaseUser;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
@@ -40,9 +41,17 @@ class Utilisateur extends BaseUser
      */
     private $image;
 
+    /**
+     * @var object
+     *
+     * @ORM\OneToMany(targetEntity="Rindra\UserBundle\Entity\UtilisateurAdresse", mappedBy="utilisateur", cascade={"persist"})
+     */
+    private $utilisateurAdresses;
+
     public function __construct()
     {
         parent::__construct();
+        $this->utilisateurAdresses = new ArrayCollection();
     }
 
     /**
@@ -112,5 +121,41 @@ class Utilisateur extends BaseUser
     public function getPrenoms()
     {
         return $this->prenoms;
+    }
+
+    /**
+     * Add utilisateurAdresses
+     *
+     * @param \Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses
+     * @return Utilisateur
+     */
+    public function addUtilisateurAdress(\Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses)
+    {
+        $this->utilisateurAdresses[] = $utilisateurAdresses;
+
+        // On lie l'adresse à l'utilisateur
+        $utilisateurAdresses->setUtilisateur($this);
+
+        return $this;
+    }
+
+    /**
+     * Remove utilisateurAdresses
+     *
+     * @param \Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses
+     */
+    public function removeUtilisateurAdress(\Rindra\UserBundle\Entity\UtilisateurAdresse $utilisateurAdresses)
+    {
+        $this->utilisateurAdresses->removeElement($utilisateurAdresses);
+    }
+
+    /**
+     * Get utilisateurAdresses
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getUtilisateurAdresses()
+    {
+        return $this->utilisateurAdresses;
     }
 }

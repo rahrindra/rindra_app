@@ -1,6 +1,14 @@
 <div class="media profile-left">
     <a class="pull-left profile-thumb" href="profile.html">
-        <img class="img-circle" src="{{ asset(app.user.image.uploadDir ~ '/' ~ app.user.image.id ~ '.' ~ app.user.image.url) }}" alt="profile">
+        <img
+            class="img-circle"
+            {% if app.user.image is defined %}
+                src="{{ asset(app.user.image.uploadDir ~ '/' ~ app.user.image.id ~ '.' ~ app.user.image.url) }}" alt="profile"
+            {% else %}
+                src="{{ asset('theme/images/man-profile.png') }}" alt="profile"
+            {% endif %}
+        >
+
     </a>
     <div class="media-body">
         <h4 class="media-heading">{{ app.user.username }}</h4>

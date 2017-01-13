@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new \Rindra\UserBundle\RindraUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Rindra\NotificationBundle\RindraNotificationBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

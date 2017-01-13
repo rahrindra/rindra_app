@@ -1,0 +1,3 @@
+rindra_notification:
+    path:     /notifications
+    defaults: { _controller: RindraNotificationBundle:Message:index }

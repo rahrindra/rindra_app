@@ -1,0 +1,4 @@
+services:
+#    rindra_notification.example:
+#        class: Rindra\NotificationBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

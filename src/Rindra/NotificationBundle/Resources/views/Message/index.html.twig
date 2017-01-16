@@ -1,7 +1,174 @@
 {% extends "::base.html.twig" %}
 
-{% block contenu %}
-    <div class="well col-lg-6 col-lg-offset-3">
-        message
+{% block mainpanel %}
+    {{ parent() }}
+
+    <div class="contentpanel">
+        <div class="row">
+            <!-- MENU MESSAGE -->
+            <div class="col-sm-3 col-md-3 col-lg-2">
+                <a class="btn btn-success btn-block btn-create-msg" data-toggle="modal" href="#create-message">Nouveau Message</a>
+                <br />
+                <ul class="nav nav-pills nav-stacked nav-msg">
+                    <li class="active">
+                        <a href="messages.html">
+                            <span class="badge pull-right">2</span>
+                            <i class="glyphicon glyphicon-inbox"></i> Inbox
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="glyphicon glyphicon-star"></i> Starred</a></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-send"></i> Sent Mail</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">3</span>
+                            <i class="glyphicon glyphicon-pencil"></i> Draft
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="glyphicon glyphicon-trash"></i> Trash</a></li>
+                </ul>
+
+                <br />
+                <h5 class="sm-title">Tags</h5>
+                <ul class="nav nav-pills nav-stacked nav-msg">
+                    <li>
+                        <a href="email.html">
+                            <span class="badge pull-right">2</span>
+                            <i class="fa fa-tag"></i> Promotions
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-tag"></i> Updates</a></li>
+                    <li><a href="#"><i class="fa fa-tag"></i> Social</a></li>
+                </ul>
+            </div><!-- END MENU MESSAGE -->
+
+            <div class="col-sm-9 col-md-9 col-lg-10">
+
+                <!-- modals -->
+                {#{{ include('@RindraNotification/Message/create.html.twig') }}#}
+                {{ render(controller('RindraNotificationBundle:Message:create')) }}
+                <!-- END modals -->
+
+
+                <div class="msg-header">
+                    <div class="pull-right">
+                        Showing 1 - 10 of 100 messages
+                        <button class="btn btn-white btn-navi btn-navi-left ml5" type="button"><i class="fa fa-chevron-left"></i></button>
+                        <button class="btn btn-white btn-navi btn-navi-right" type="button"><i class="fa fa-chevron-right"></i></button>
+
+                    </div>
+                    <div class="pull-left">
+                        <button class="btn btn-white tooltips" type="button" data-toggle="tooltip" title="Archive"><i class="fa fa-hdd-o"></i></button>
+                        <button class="btn btn-white tooltips" type="button" data-toggle="tooltip" title="Report Spam"><i class="fa fa-exclamation-circle"></i></button>
+                        <button class="btn btn-white tooltips" type="button" data-toggle="tooltip" title="Delete"><i class="fa fa-trash-o"></i></button>
+
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle tooltips" type="button" title="Move to Folder">
+                                <i class="fa fa-folder"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="#"><i class="fa fa-folder mr5"></i> Conference</a></li>
+                                <li><a href="#"><i class="fa fa-folder mr5"></i> Newsletter</a></li>
+                                <li><a href="#"><i class="fa fa-folder mr5"></i> Invitations</a></li>
+                                <li><a href="#"><i class="fa fa-folder mr5"></i> Promotions</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle tooltips" type="button" title="Label">
+                                <i class="fa fa-tag"></i>
+                            </button>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="#"><i class="fa fa-tag mr5"></i> Web</a></li>
+                                <li><a href="#"><i class="fa fa-tag mr5"></i> Photo</a></li>
+                                <li><a href="#"><i class="fa fa-tag mr5"></i> Video</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- pull-right -->
+                </div><!-- msg-header -->
+                <ul class="media-list msg-list">
+                    <li class="media unread">
+                        <div class="ckbox ckbox-primary pull-left">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1"></label>
+                        </div>
+                        <a class="pull-left" href="#">
+                            <img class="media-object img-circle img-online" src="images/photos/user1.png" alt="...">
+                        </a>
+                        <div class="media-body">
+                            <div class="pull-right media-option">
+                                <i class="fa fa-paperclip mr5"></i>
+                                <small>Yesterday 5:51am</small>
+                                <a href="#"><i class="fa fa-star"></i></a>
+                                <div class="btn-group">
+                                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-cog"></i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="#">Mark as Unread</a></li>
+                                        <li><a href="#">Reply</a></li>
+                                        <li><a href="#">Forward</a></li>
+                                        <li><a href="#">Archive</a></li>
+                                        <li><a href="#">Move to Folder</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Report as Spam</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4 class="sender">Renov Leonga</h4>
+                            <p><a href="view_message.html"><strong class="subject">Hi Hello!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</a></p>
+                        </div>
+                    </li>
+                </ul>
+        </div>
     </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        jQuery(document).ready(function() {
+
+            //highlight rows that are already checked
+            jQuery('.msg-list .ckbox input').each(function(){
+                if (jQuery(this).is(':checked')) {
+                    jQuery(this).parents('li').addClass('highlighted');
+                }
+            });
+
+            // highlight/unhighlight rows when checked/unchecked
+            jQuery('.ckbox input').click(function(){
+                if(jQuery(this).is(':checked')) {
+                    jQuery(this).parents('li').addClass('highlighted');
+                } else {
+                    jQuery(this).parents('li').removeClass('highlighted');
+                }
+            });
+
+            // ajax pour créer nouveau message
+            $('#envoyer_message').click(function(e) {
+                e.preventDefault;
+                $.ajax(
+                    {
+                        url : "{{ path('rindra_notificatio_create') }}",
+                        type: 'POST',
+                        datatype: 'json',
+                        data : $('.ajout-message').serialize(),
+                        success:function(data)
+                        {
+                            $('#create-message').modal().hide();
+                        },
+                        error: function()
+                        {
+                            //if fails
+//                            alert("ERROR AJAX");
+                        }
+                    });
+                alert('end ajax');
+            });
+
+        });
+    </script>
 {% endblock %}

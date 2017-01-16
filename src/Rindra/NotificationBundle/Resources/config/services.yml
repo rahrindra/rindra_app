@@ -1,4 +1,7 @@
 services:
-#    rindra_notification.example:
-#        class: Rindra\NotificationBundle\Example
+    rindra_notification.message.form.type:
+        class: Rindra\NotificationBundle\Form\Type\MessageType
 #        arguments: [@service_id, "plain_value", %parameter%]
+#    rindra_notification.message.form.handler:
+#        class: Rindra\NotificationBundle\Form\Handler\MessageHandler
+#        arguments: [@rindra_notification.message.form.type, "@request", "@mailer"]

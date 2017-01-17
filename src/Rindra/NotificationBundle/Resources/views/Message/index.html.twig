@@ -86,6 +86,7 @@
                     </div><!-- pull-right -->
                 </div><!-- msg-header -->
                 <ul class="media-list msg-list">
+                    {% for message in messages %}
                     <li class="media unread">
                         <div class="ckbox ckbox-primary pull-left">
                             <input type="checkbox" id="checkbox1">
@@ -115,10 +116,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <h4 class="sender">Renov Leonga</h4>
-                            <p><a href="view_message.html"><strong class="subject">Hi Hello!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</a></p>
+                            <h4 class="sender">{% if message.expediteur is not null %}{{ message.expediteur.username }}{% endif %}</h4>
+                            <p><a href="view_message.html"><strong class="subject">{{ message.sujet }}</strong> {{ message.contenu }}</a></p>
                         </div>
                     </li>
+                    {% endfor %}
                 </ul>
         </div>
     </div>
@@ -158,15 +160,13 @@
                         data : $('.ajout-message').serialize(),
                         success:function(data)
                         {
-                            $('#create-message').modal().hide();
+                            $('#create-message').modal('hide');
                         },
                         error: function()
                         {
-                            //if fails
-//                            alert("ERROR AJAX");
+                            alert("ERROR AJAX");
                         }
                     });
-                alert('end ajax');
             });
 
         });

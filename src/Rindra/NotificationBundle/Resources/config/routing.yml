@@ -5,3 +5,7 @@ rindra_notification:
 rindra_notificatio_create:
     path:     /notification/create
     defaults: { _controller: RindraNotificationBundle:Message:create }
+
+rindra_notification_edit:
+    path:     /notification/edit/{id}
+    defaults: { _controller: RindraNotificationBundle:Message:create }
